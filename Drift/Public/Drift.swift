@@ -19,6 +19,7 @@ open class Drift: NSObject {
      
     */
     open class func setup(_ embedId: String) {
+        DriftDataStore.sharedInstance.setEmbedId(embedId)
         DriftManager.retrieveDataFromEmbeds(embedId)
         DriftManager.createTemporaryDirectory()
     }
@@ -30,6 +31,8 @@ open class Drift: NSObject {
      
     */
     open class func registerUser(_ userId: String, email: String) {
+        DriftDataStore.sharedInstance.setUserId(userId)
+        DriftDataStore.sharedInstance.setEmail(email)
         DriftManager.registerUser(userId, email: email, attrs: nil)
     }
     
