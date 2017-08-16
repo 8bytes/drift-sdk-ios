@@ -30,8 +30,6 @@ open class Drift: NSObject {
      
     */
     open class func registerUser(_ userId: String, email: String) {
-        DriftDataStore.sharedInstance.setUserId(userId)
-        DriftDataStore.sharedInstance.setEmail(email)
         DriftManager.registerUser(userId, email: email, attrs: nil)
     }
     

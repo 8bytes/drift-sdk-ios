@@ -68,6 +68,9 @@ class DriftManager: NSObject {
      Gets Auth for user - Calls Identify if new user
     */
     class func registerUser(_ userId: String, email: String, attrs: [String: AnyObject]? = nil, completion: ((Int?)->())? = nil){
+        DriftDataStore.sharedInstance.setUserId(userId)
+        DriftDataStore.sharedInstance.setEmail(email)
+        
         guard let orgId = DriftDataStore.sharedInstance.embed?.orgId else {
             LoggerManager.log("No Embed, not registering user - Waiting for Embeds to complete")
             DriftManager.sharedInstance.registerInfo = (userId, email, attrs)
