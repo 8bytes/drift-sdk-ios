@@ -19,7 +19,6 @@ open class Drift: NSObject {
      
     */
     open class func setup(_ embedId: String) {
-        DriftDataStore.sharedInstance.setEmbedId(embedId)
         DriftManager.retrieveDataFromEmbeds(embedId)
         DriftManager.createTemporaryDirectory()
     }

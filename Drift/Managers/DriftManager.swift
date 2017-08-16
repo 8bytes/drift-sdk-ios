@@ -43,7 +43,6 @@ class DriftManager: NSObject {
             //New Embed Account - Logout and continue to get new data
             if pastEmbedId != embedId {
                 Drift.logout()
-                completion?(false)
             }
         }
         
@@ -135,7 +134,7 @@ class DriftManager: NSObject {
                 CampaignsManager.checkForCampaigns(userId: userId)
             }
         }else{
-            if let embedId = DriftDataStore.sharedInstance.embedId, let userId = DriftDataStore.sharedInstance.userId, let userEmail = DriftDataStore.sharedInstance.userEmail {
+            if let embedId = DriftDataStore.sharedInstance.embed?.embedId, let userId = DriftDataStore.sharedInstance.userId, let userEmail = DriftDataStore.sharedInstance.userEmail {
                 Drift.setup(embedId)
                 Drift.registerUser(userId, email: userEmail)
             }else{

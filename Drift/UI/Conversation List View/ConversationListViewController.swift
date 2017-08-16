@@ -57,7 +57,7 @@ class ConversationListViewController: UIViewController {
             self.dismissVC()
         }))
 
-        if endUserId == nil, let embedId = DriftDataStore.sharedInstance.embedId, let userEmail = DriftDataStore.sharedInstance.userEmail, let userId = DriftDataStore.sharedInstance.userId {
+        if endUserId == nil, let embedId = DriftDataStore.sharedInstance.embed?.embedId, let userEmail = DriftDataStore.sharedInstance.userEmail, let userId = DriftDataStore.sharedInstance.userId {
             DriftManager.retrieveDataFromEmbeds(embedId, completion: { (success) in
                 DriftManager.registerUser(userId, email: userEmail, attrs: nil, completion: { (endUserId) in
                     if let endUserId = endUserId {
