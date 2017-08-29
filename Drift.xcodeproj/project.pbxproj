@@ -138,11 +138,11 @@
 		2CF43EA21C7E045F008E6748 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = Drift/UI/ColorPalette.swift; sourceTree = SOURCE_ROOT; };
 		2CF43EA61C7E056F008E6748 /* DriftImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = DriftImages.xcassets; path = Drift/UI/DriftImages.xcassets; sourceTree = SOURCE_ROOT; };
 		376DB1A9D502953CD6D8325F /* Pods_DriftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		492F77E71F55A72300A05094 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = SOURCE_ROOT; };
-		492F77E81F55A72300A05094 /* Presence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presence.swift; sourceTree = SOURCE_ROOT; };
-		492F77E91F55A72300A05094 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = SOURCE_ROOT; };
-		492F77EA1F55A72300A05094 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = SOURCE_ROOT; };
-		492F77EB1F55A72300A05094 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = SOURCE_ROOT; };
+		492F77E71F55A72300A05094 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = Drift/Birdsong/Channel.swift; sourceTree = SOURCE_ROOT; };
+		492F77E81F55A72300A05094 /* Presence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presence.swift; path = Drift/Birdsong/Presence.swift; sourceTree = SOURCE_ROOT; };
+		492F77E91F55A72300A05094 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Push.swift; path = Drift/Birdsong/Push.swift; sourceTree = SOURCE_ROOT; };
+		492F77EA1F55A72300A05094 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Drift/Birdsong/Response.swift; sourceTree = SOURCE_ROOT; };
+		492F77EB1F55A72300A05094 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Drift/Birdsong/Socket.swift; sourceTree = SOURCE_ROOT; };
 		630205171C52A24E00C02F5E /* CampaignsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignsManager.swift; path = Drift/Managers/CampaignsManager.swift; sourceTree = SOURCE_ROOT; };
 		630205191C52AC5100C02F5E /* DriftManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriftManager.swift; path = Drift/Managers/DriftManager.swift; sourceTree = SOURCE_ROOT; };
 		6302051B1C52AD7900C02F5E /* Embed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Embed.swift; path = Drift/Models/Embed.swift; sourceTree = SOURCE_ROOT; };
