@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        Drift.setup(<#embedId#>)
+        Drift.setup("teergsg9bb5d")
         
 //        Drift.debugMode(true)
-        Drift.registerUser(<#userId#>, email: <#email#>)
+        Drift.registerUser("1237438", email: "eoin+app@8bytes.is")
         
         return true
     }
